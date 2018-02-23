@@ -99,7 +99,7 @@ private:
 
     void mainLoop() {
         while (!glfwWindowShouldClose(window)) {
-            glfwPollEvents();
+            glfwWaitEventsTimeout(0.016666667);
             drawFrame();
         }
 
